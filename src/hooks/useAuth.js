@@ -89,7 +89,7 @@ export function UserAuthProvider({ children }) {
       cacheProvider: true, 
       providerOptions 
     });
-    // web3Modal.clearCachedProvider();
+    // web3Modal.clearCachedProvider();/
     const provider = await web3Modal.connect();
     await web3Modal.toggleModal();
     const newWeb3 = new Web3(provider);
